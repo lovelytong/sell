@@ -1,0 +1,283 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/c.sublime-build",
+					""
+				],
+				[
+					"Packages/User/c.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/c.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/c.sublime-build",
+					""
+				],
+				[
+					"Packages/User/c.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/c.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"vu e",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"pi",
+				"Preferences: Settings"
+			],
+			[
+				"pcic",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 461.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"brew install gcc",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/lovelytong/Library/Application Support/Sublime Text 3/Packages/SublimeTmpl/Main.sublime-menu",
+		"/Users/lovelytong/Desktop/untitled",
+		"/Users/lovelytong/Library/Application Support/Sublime Text 3/Packages/User/SublimeTmpl/Main.sublime-menu",
+		"/Users/lovelytong/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/lovelytong/Desktop/sell/sell/.babelrc",
+		"/Users/lovelytong/Desktop/sell/sell/.editorconfig",
+		"/Users/lovelytong/Desktop/sell/sell/.eslintignore",
+		"/Users/lovelytong/Desktop/sell/sell/.eslintrc.js",
+		"/Users/lovelytong/package-lock.json",
+		"/Users/lovelytong/.viminfo",
+		"/Users/lovelytong/.CFUserTextEncoding",
+		"/Users/lovelytong/.bash_history",
+		"/Users/lovelytong/sell/src/assets/logo.png",
+		"/Users/lovelytong/sell/src/components/HelloWorld.vue",
+		"/Users/lovelytong/sell/src/App.vue",
+		"/Users/lovelytong/Desktop/vue-sell/sell/README.md",
+		"/Users/lovelytong/Desktop/vue-sell/selldemo/src/App.vue",
+		"/Users/lovelytong/Desktop/vue-sell/selldemo/src/main.js",
+		"/Users/lovelytong/Documents/GitHub/demo/README.md",
+		"/Users/lovelytong/Documents/GitHub/demo/vue-demo/README.md",
+		"/Users/lovelytong/Desktop/clanguage/l1.c",
+		"/Users/lovelytong/Desktop/vue/src/App.vue",
+		"/Users/lovelytong/Library/Application Support/Sublime Text 3/Packages/User/c.sublime-build",
+		"/hello",
+		"/Users/lovelytong/Desktop/hello world<stdio.h>",
+		"/Users/lovelytong/Desktop/c语言",
+		"/Users/lovelytong/Desktop/#include<stdio.h>",
+		"/Users/lovelytong/Desktop/c.sublime-build",
+		"/untitled.c"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 167.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/c.sublime-build",
+	"project": "App.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Library/Application Support/Sublime Text 3/Packages/User/c.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
