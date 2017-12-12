@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-  	 <div class="content-wrapper">
+  	<div class="content-wrapper">
 
   	 	<div class="avatar">
   	 		<img width="64" height="64" :src="seller.avatar">
@@ -21,9 +21,9 @@
   	 		<i class="icon-keyboard_arrow_right"></i>
   	 	</div>	
   	 	 	
-  	 </div>
+  	</div>
 
-  	 <div class="bulletin-wrapper" @click="showDetail">
+  	<div class="bulletin-wrapper" @click="showDetail">
   	 	<span class="bulletin-title"></span><span class="bulletin-text">{{seller.bulletin}}</span>
   	 	<i class="icon-keyboard_arrow_right"></i>
   	</div>
@@ -223,6 +223,7 @@
 			height:100%
 			z-index:-1
 			filter: blur(10px)
+			
 		.detail
 			position: fixed
 			z-index: 100
