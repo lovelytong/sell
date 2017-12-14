@@ -15,7 +15,7 @@
 					<li v-for="item in goods" class="food-list" ref="foodList">
 						<h1 class="title">{{item.name}}</h1>
 						<ul>
-							<li @click="selectFood(food,$event)" v-for="food in item.foods" class="food-item border-1px">
+							<li v-for="food in item.foods" class="food-item border-1px">
 								<div class="icon">
 									<img width="57" height="57" :src="food.icon">	
 								</div>
@@ -29,7 +29,10 @@
 									<div class="price">
 										<span class="now">¥{{food.price}}</span>
 										<span class="old" v-show="food.oldPrice">¥{{food.oldPrice}}</span>		
-									</div>									
+									</div>	
+									<div class="cartcontrol-wrapper">
+										<cartcontrol :food="food"></cartcontrol>
+									</div>								
 								</div>
 								
 							</li>
@@ -38,7 +41,7 @@
 					</li>
 				</ul>
 			</div>
-			<shopcart></shopcart>
+			<shopcart  :selectFoods="selectFoods" :deliveryPrice="seller.deliveryPrice" :minPrice="seller.minPrice"></shopcart>
 		</div>
 </div>
 </template>
@@ -46,6 +49,7 @@
 <script type="text/ecmascript-6">
 	import BScroll from 'better-scroll';
 	import shopcart from 'components/shopcart/shopcart';
+	import cartcontrol from 'components/cartcontrol/cartcontrol';
 	
 	const ERR_OK = 0;
 	
@@ -75,6 +79,17 @@
 					}
 				}
 				return 0;
+			},
+			selectFoods() {
+				let foods = [];
+				this.goods.forEach((good) => {
+					good.foods.forEach((food) => {
+						if (food.count) {
+							foods.push(food);
+						}
+					});
+				});
+				return foods;
 			}
 
 		},
@@ -133,7 +148,8 @@
 		},
 
 		components: {
-			shopcart
+			shopcart,
+			cartcontrol
 		}
 	};
 </script>
@@ -241,6 +257,10 @@
 							text-decoration: line-through
 							font-size: 10px
 							color: rgb(147,153,159)
+					.cartcontrol-wrapper
+							position: absolute
+							right: 0
+							bottom: 12px
 						
 					
 			
