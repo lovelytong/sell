@@ -15,7 +15,7 @@
 					<li v-for="item in goods" class="food-list" ref="foodList">
 						<h1 class="title">{{item.name}}</h1>
 						<ul>
-							<li v-for="food in item.foods" class="food-item border-1px">
+							<li @click="selectFood(food,$event)" v-for="food in item.foods" class="food-item border-1px">
 								<div class="icon">
 									<img width="57" height="57" :src="food.icon">	
 								</div>
@@ -43,13 +43,15 @@
 			</div>
 			<shopcart  :selectFoods="selectFoods" :deliveryPrice="seller.deliveryPrice" :minPrice="seller.minPrice"></shopcart>
 		</div>
-</div>
+		<food :food="selectedFood" ref="food"></food>
+	</div>
 </template>
 
 <script type="text/ecmascript-6">
 	import BScroll from 'better-scroll';
 	import shopcart from 'components/shopcart/shopcart';
 	import cartcontrol from 'components/cartcontrol/cartcontrol';
+	import food from 'components/food/food';
 	
 	const ERR_OK = 0;
 	
@@ -118,13 +120,12 @@
 				let el = foodList[index];
 				this.foodsScroll.scrollToElement(el, 300);
 			},
-			addFood(target) {
-				this._drop(target);
-			},
-			_drop(target) {
-				this.$nextTick(() => {
-					this.$refs.shopcart.drop(target);
-				});
+			selectFood(food, event) {
+				if (!event._constructed) {
+					return;
+				}
+				this.selectedFood = food;
+				this.$refs.food.show();
 			},
 			_initScroll() {
 				this.menuScroll = new BScroll(this.$refs.menuWrapper, {
@@ -142,7 +143,6 @@
 					}
 				});
 			},
-
 			_calculateHeight() {
 				let foodList = this.$refs.foodList;
 				let height = 0;
@@ -157,7 +157,8 @@
 
 		components: {
 			shopcart,
-			cartcontrol
+			cartcontrol,
+			food
 		}
 	};
 </script>
