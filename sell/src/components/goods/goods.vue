@@ -118,6 +118,14 @@
 				let el = foodList[index];
 				this.foodsScroll.scrollToElement(el, 300);
 			},
+			addFood(target) {
+				this._drop(target);
+			},
+			_drop(target) {
+				this.$nextTick(() => {
+					this.$refs.shopcart.drop(target);
+				});
+			},
 			_initScroll() {
 				this.menuScroll = new BScroll(this.$refs.menuWrapper, {
 					click: true
