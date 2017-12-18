@@ -1,5 +1,8 @@
 <template>
-<div>I am seller!</div> 
+<div class="seller">
+	
+	
+</div> 
 </template>
 <script type="text/ecmascript-6">
 </script>
