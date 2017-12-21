@@ -6,13 +6,13 @@
     <div class="tab border-1px">
 
       <div class="tab-item">
-        <router-link to="/goods">新商品</router-link>
+        <router-link to="/goods">商品</router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/ratings">新评论</router-link>
+        <router-link to="/ratings">评论</router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/seller">新商家</router-link>
+        <router-link to="/seller">商家</router-link>
        </div>
 
     </div>
